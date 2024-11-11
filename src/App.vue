@@ -1,6 +1,5 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
 </script>
 
 <template>
@@ -11,13 +10,12 @@ import HelloWorld from './components/HelloWorld.vue'
       <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
       <div class="wrapper">
-        <HelloWorld msg="You did it!" />
 
         <!-- <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav> -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
@@ -37,6 +35,23 @@ import HelloWorld from './components/HelloWorld.vue'
                 <a class="nav-link" href="#"><router-link to="/vista_combinada">Vista Combinada</router-link></a>
               </li>
             </ul>
+          </div>
+        </nav> -->
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#"><router-link to="/addtask"><i class="fas fa-plus"></i> Agregar
+                    Tarea</router-link></a>
+                <a class="nav-link" href="#"><router-link to="/lista_tareas">Listar Tarea</router-link></a>
+                <a class="nav-link" href="#"><router-link to="/vista_combinada">Vista Combinada</router-link></a>
+              </div>
+            </div>
           </div>
         </nav>
       </div>
